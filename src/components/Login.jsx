@@ -5,16 +5,16 @@ export default function Login(){
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [message, setMessage] = useState('');
-    //const [flag, setFlag] = useState(true);
+    const [flag, setFlag] = useState(true);
   
     const handleLogin = (e) => {
       e.preventDefault();
   
       if (username === 'user' && password === 'password') {
-        //setFlag(false);
+        setFlag(false);
         setMessage('Welcome, user!');
       } else {
-        //setFlag(true);
+        setFlag(true);
         setMessage('Invalid username or password');
       }
     };
@@ -25,7 +25,7 @@ export default function Login(){
 
             {message && <p>{message}</p>}
 
-            
+            {flag && 
                 <form 
                     onSubmit={handleLogin}
                     style={{
@@ -56,7 +56,7 @@ export default function Login(){
                     </label>
                     <button type="submit" style={{ width: '100px' }}>Submit</button>
                 </form>
-            
+            }
         </div>
     );
 }
