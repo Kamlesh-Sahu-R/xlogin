@@ -12,7 +12,7 @@ export default function Login(){
   
       if (username === 'user' && password === 'password') {
         setFlag(false);
-        setMessage('Welcome, user');
+        setMessage('Welcome, user!');
       } else {
         setFlag(true);
         setMessage('Invalid username or password');
