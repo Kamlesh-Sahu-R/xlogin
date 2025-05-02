@@ -37,7 +37,7 @@ export default function Login(){
                     <label>Username:
                         <input
                             type="text"
-                            placeholder="Username"
+                            placeholder="username"
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
                             required
@@ -46,7 +46,7 @@ export default function Login(){
                     <label>Password:
                         <input
                             type="text"
-                            placeholder="Password"
+                            placeholder="password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             required
