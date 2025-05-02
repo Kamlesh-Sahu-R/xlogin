@@ -2,9 +2,9 @@ import { useState } from "react";
 
 export default function Login(){
 
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
-    const [message, setMessage] = useState('');
+    const [userName, setUsername] = useState("");
+    const [passWord, setPassword] = useState("");
+    const [message, setMessage] = useState("");
     const [flag, setFlag] = useState(true);
   
     const handleLogin = (e) => {
@@ -39,7 +39,7 @@ export default function Login(){
                             type="text"
                             id = "username"
                             placeholder="username"
-                            value={username}
+                            value={userName}
                             onChange={(e) => setUsername(e.target.value)}
                             required
                         />
@@ -49,7 +49,7 @@ export default function Login(){
                             type="text"
                             id = "password"
                             placeholder="password"
-                            value={password}
+                            value={passWord}
                             onChange={(e) => setPassword(e.target.value)}
                             required
                         />
