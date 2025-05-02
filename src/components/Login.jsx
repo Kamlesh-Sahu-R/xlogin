@@ -34,18 +34,20 @@ export default function Login(){
                         gap: '10px', 
                     }}
                 >
-                    <label>Username
+                    <label htmlFor="username">Username
                         <input
                             type="text"
+                            id = "username"
                             placeholder="username"
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
                             required
                         />
                     </label>
-                    <label>Password
+                    <label htmlFor="password">Password
                         <input
                             type="text"
+                            id = "password"
                             placeholder="password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
