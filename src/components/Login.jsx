@@ -22,24 +22,39 @@ export default function Login(){
     return(
         <div>
             <h1>Login Page</h1>
+
             {message && <p>{message}</p>}
-            {flag && <form onSubmit={handleLogin}>
-                <p>Username:<input
-                    type="text"
-                    placeholder="Username"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
-                    required
-                /></p>
-                <p>Password:<input
-                    type="text"
-                    placeholder="Password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    required
-                /></p>
-                <button type="submit">Submit</button>
-            </form>}
+
+            {flag && 
+                <form 
+                    onSubmit={handleLogin}
+                    style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: '10px', 
+                    }}
+                >
+                    <label>Username:
+                        <input
+                            type="text"
+                            placeholder="Username"
+                            value={username}
+                            onChange={(e) => setUsername(e.target.value)}
+                            required
+                        />
+                    </label>
+                    <label>Password:
+                        <input
+                            type="text"
+                            placeholder="Password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            required
+                        />
+                    </label>
+                    <button type="submit" style={{ width: '100px' }}>Submit</button>
+                </form>
+            }
         </div>
     );
 }
