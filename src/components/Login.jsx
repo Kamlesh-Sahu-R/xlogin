@@ -34,7 +34,7 @@ export default function Login(){
                         gap: '10px', 
                     }}
                 >
-                    <label>Username:
+                    <label>Username
                         <input
                             type="text"
                             placeholder="username"
@@ -43,7 +43,7 @@ export default function Login(){
                             required
                         />
                     </label>
-                    <label>Password:
+                    <label>Password
                         <input
                             type="text"
                             placeholder="password"
