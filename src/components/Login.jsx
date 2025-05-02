@@ -34,7 +34,7 @@ export default function Login(){
                         gap: '10px', 
                     }}
                 >
-                    <label htmlFor="username">Username
+                    <label>Username
                         <input
                             type="text"
                             id = "username"
@@ -44,7 +44,7 @@ export default function Login(){
                             required
                         />
                     </label>
-                    <label htmlFor="password">Password
+                    <label>Password
                         <input
                             type="text"
                             id = "password"
