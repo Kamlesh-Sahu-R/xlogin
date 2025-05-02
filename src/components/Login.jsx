@@ -34,7 +34,7 @@ export default function Login(){
                         gap: '10px', 
                     }}
                 >
-                    <label>Username</label>
+                    <div><label>Username</label>
                         <input
                             type="text"
                             id = "username"
@@ -43,8 +43,8 @@ export default function Login(){
                             onChange={(e) => setUsername(e.target.value)}
                             required
                         />
-                    
-                    <label>Password</label>
+                    </div>
+                    <div><label>Password</label>
                         <input
                             type="text"
                             id = "password"
@@ -53,7 +53,7 @@ export default function Login(){
                             onChange={(e) => setPassword(e.target.value)}
                             required
                         />
-                    
+                    </div>
                     <button type="submit" style={{ width: '100px' }}>Submit</button>
                 </form>
             }
