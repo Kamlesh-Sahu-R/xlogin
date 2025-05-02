@@ -10,7 +10,7 @@ export default function Login(){
     const handleLogin = (e) => {
       e.preventDefault();
   
-      if (username === 'user' && password === 'password') {
+      if (userName === 'user' && passWord === 'password') {
         setFlag(false);
         setMessage('Welcome, user!');
       } else {
